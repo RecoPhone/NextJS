@@ -1,66 +1,35 @@
-// src/app/api/stripe/webhook/route.ts
-import { NextResponse } from "next/server";
-import { stripe } from "@/lib/stripe";
-import type Stripe from "stripe";
+import Stripe from "stripe";
+import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
-// Évite toute mise en cache / static optimization
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"; // évite toute mise en cache
 
-export async function POST(req: Request) {
-  const signature = req.headers.get("stripe-signature");
-  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
-  if (!signature || !webhookSecret) {
-    return new NextResponse("Webhook not configured", { status: 400 });
-  }
+export async function POST(req: NextRequest) {
+  const sig = req.headers.get("stripe-signature");
+  if (!sig) return NextResponse.json({ error: "Missing signature" }, { status: 400 });
 
-  // Important : récupérer le corps brut
-  const rawBody = await req.text();
-
+  const rawBody = await req.text(); // body brut requis
   let event: Stripe.Event;
+
   try {
-    event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
+    event = stripe.webhooks.constructEvent(
+      rawBody, sig, process.env.STRIPE_WEBHOOK_SECRET!
+    );
   } catch (err: any) {
-    console.error("Webhook signature verification failed:", err.message);
-    return new NextResponse(`Webhook Error: ${err.message}`, { status: 400 });
+    console.error("Webhook verify failed:", err?.message);
+    return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
 
   try {
-    switch (event.type) {
-      case "checkout.session.completed": {
-        const session = event.data.object as Stripe.Checkout.Session;
-
-        // (Optionnel) Récupérer les line items si nécessaire
-        // const lineItems = await stripe.checkout.sessions.listLineItems(session.id, { limit: 100 });
-
-        // TODO: marquer la commande payée, envoyer un mail, générer PDF, stocker le devis, etc.
-        // Exemple d'accès :
-        // session.id
-        // session.mode === "payment" | "subscription"
-        // session.customer_email
-        // session.metadata?.quoteId
-
-        break;
-      }
-
-      case "customer.subscription.created":
-      case "customer.subscription.updated":
-      case "customer.subscription.deleted": {
-        const sub = event.data.object as Stripe.Subscription;
-        // TODO: synchroniser l'abonnement (plan, statut, dates)
-        // sub.id, sub.status, sub.current_period_end, sub.items.data, etc.
-        break;
-      }
-
-      default:
-        // console.debug(`Unhandled event type: ${event.type}`);
-        break;
+    if (event.type === "checkout.session.completed") {
+      const session = event.data.object as Stripe.Checkout.Session;
+      // TODO: marquer l’abonnement actif, mail de bienvenue, etc.
     }
-
-    return NextResponse.json({ received: true });
-  } catch (err: any) {
-    console.error("Webhook handler error:", err);
-    return NextResponse.json({ error: "Handler error" }, { status: 500 });
+    return NextResponse.json({ received: true }, { status: 200 });
+  } catch (e: any) {
+    console.error("Webhook handler error:", e?.message);
+    return NextResponse.json({ error: "Handler failed" }, { status: 500 });
   }
 }
