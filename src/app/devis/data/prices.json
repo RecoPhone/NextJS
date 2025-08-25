@@ -1,0 +1,4030 @@
+[
+  {
+    "categorie": "iPhone",
+    "modeles": [
+      {
+        "nom": "iPhone 8",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 64.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 48.0
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 8 Plus",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 69.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 119.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone SE 2020",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 64.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone SE 2022",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 64.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone X",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone XS",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone XS Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 84.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 94.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.99
+          }
+        ]
+      },
+      {
+        "nom": "iPhone XR",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 34.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 69.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 128.0
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 11",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 39.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 69.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 11 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 11 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 179.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 129.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 12 Mini",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 139.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 12",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 12 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 179.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 124.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 12 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 219.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 129.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 13 Mini",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 179.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 13",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 79.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 13 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 259.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 129.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 149.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 13 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 319.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 129.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 189.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 14",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 209.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 189.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 14 Plus",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 219.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 189.0
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 14 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 329.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 219.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 14 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 379.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 129.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 219.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 15",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 279.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 84.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 234.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 15 Plus",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 289.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 89.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 234.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 15 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 389.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 234.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 15 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 419.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 319.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 16",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 419.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 84.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 149.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 419.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 16 Plus",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 419.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 84.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 149.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 419.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 16 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 619.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 84.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 149.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 419.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      },
+      {
+        "nom": "iPhone 16 Pro Max",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 649.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 84.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 79.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 94.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 149.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Châssis",
+            "prix": 419.9
+          },
+          {
+            "type": "Lentille caméra",
+            "prix": 14.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "iPad",
+    "modeles": [
+      {
+        "nom": "iPad Mini 5 (2019)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad 9.7 (2017)",
+        "reparations": [
+          {
+            "type": "Écran (vitre)",
+            "prix": 89.9
+          },
+          {
+            "type": "Écran (LCD)",
+            "prix": 104.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad 9.7 (2018)",
+        "reparations": [
+          {
+            "type": "Écran (vitre)",
+            "prix": 89.9
+          },
+          {
+            "type": "Écran (LCD)",
+            "prix": 104.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad 10.2 (2019)",
+        "reparations": [
+          {
+            "type": "Écran (vitre)",
+            "prix": 99.9
+          },
+          {
+            "type": "Écran (LCD)",
+            "prix": 114.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad 10.2 (2021)",
+        "reparations": [
+          {
+            "type": "Écran (vitre)",
+            "prix": 99.9
+          },
+          {
+            "type": "Écran (LCD)",
+            "prix": 114.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Air (2013)",
+        "reparations": [
+          {
+            "type": "Écran (vitre)",
+            "prix": 69.9
+          },
+          {
+            "type": "Écran (LCD)",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Air 2 (2014)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 169.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Air 3 (2019)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 189.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Air 4 (2020)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 239.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Air 5 (2022)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 249.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 129.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 9.7 (2016)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 249.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 10.5 (2017)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 259.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 11 (2018)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 329.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 11 (2020)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 329.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 11 (2021)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 329.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 119.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 12.9 (2020)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 339.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 139.9
+          }
+        ]
+      },
+      {
+        "nom": "iPad Pro 12.9 (2021)",
+        "reparations": [
+          {
+            "type": "Écran Bloc Complet",
+            "prix": 349.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 139.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Samsung - Série S",
+    "modeles": [
+      {
+        "nom": "Samsung Galaxy S8",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 179.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S8 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 209.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S9",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 179.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 39.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S9 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S10",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 234.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 100.0
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S10 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 244.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 100.0
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S10e",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 189.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 100.0
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S20",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 239.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 94.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S20 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 259.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S20 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 269.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 74.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 194.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S20 FE",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S21",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 209.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S21 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 219.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 84.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S21 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 289.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 84.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S21 FE",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 159.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 84.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S22",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 219.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 84.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S22 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S22 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 299.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S23",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 219.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S23 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 229.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 59.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 99.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S23 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 399.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 109.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S24",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 189.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S24 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 224.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 69.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 89.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy S24 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 319.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 89.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 119.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 74.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Samsung - Série A",
+    "modeles": [
+      {
+        "nom": "Samsung Galaxy A12",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 55.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A12 Nacho",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 55.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A13",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 55.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A14",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 84.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 55.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A15",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 84.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 55.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A20",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 49.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A20e",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 49.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A20s",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 49.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A21s",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 49.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A22",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 79.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 49.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A33",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 63.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A34",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 134.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 59.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 69.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A35",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 59.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 69.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A40",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A41",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 109.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 49.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A42",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A50",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A51",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 109.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A52",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 109.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A52s",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 44.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A53",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 59.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 74.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A54",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 134.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 59.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 74.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A55",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 59.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 74.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A70",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 104.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A71",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 124.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A72",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 134.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Galaxy A73",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 62.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra avant",
+            "prix": 49.9
+          },
+          {
+            "type": "Caméra arrière",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Samsung - Série Tab",
+    "modeles": [
+      {
+        "nom": "Samsung Tab A 10.1 2019 (T510)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 74.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab A 10.1 2019 (T515)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 74.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab A 10.1 (T580)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 154.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 100.0
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab A 10.1 (T585)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 154.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 100.0
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab A 10.5 (T590)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 174.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S8",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 244.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 89.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S8 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 399.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 89.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S8 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 499.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 89.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S9",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 289.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 79.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S9 FE",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 229.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 79.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S9 FE +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 259.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 84.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S9 +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 349.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 79.9
+          }
+        ]
+      },
+      {
+        "nom": "Samsung Tab S9 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 499.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 99.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Xiaomi - Série Mi",
+    "modeles": [
+      {
+        "nom": "Xiaomi MI 10",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 204.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 10 Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 114.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 10T",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 109.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 10T Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 109.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 11",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 229.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 11 Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 11T",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 11T Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 44.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 11 Ultra",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 397.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 12 Lite 5G",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 159.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 12T",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 12T Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 12",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 12 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 229.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 13",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 319.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 49.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 13 Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 139.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 13 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 299.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI 14",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 309.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Xiaomi - Série Redmi",
+    "modeles": [
+      {
+        "nom": "Xiaomi Redmi 9",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 64.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 9A",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 9C",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 74.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 9T",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 10",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 89.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 10 (2022)",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 10A",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 79.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 10C",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 79.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 12",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 84.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 12C",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 79.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi 13C",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Dock de charge",
+            "prix": 44.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 59.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categorie": "Xiaomi - Série Mi Note",
+    "modeles": [
+      {
+        "nom": "Xiaomi Redmi Note 10",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 10 Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 79.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 10 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 10T",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 10S",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 139.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 11",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 11 Pro Plus",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 199.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 11S",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 139.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 11SE",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 12",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 12S",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 12 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 12 Pro +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 13",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 119.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 13 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 229.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi Redmi Note 13 Pro +",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI Note 10",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 149.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 64.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 64.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI Note 10 Lite",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 99.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      },
+      {
+        "nom": "Xiaomi MI Note 10 Pro",
+        "reparations": [
+          {
+            "type": "Écran",
+            "prix": 129.9
+          },
+          {
+            "type": "Batterie",
+            "prix": 54.9
+          },
+          {
+            "type": "Face arrière",
+            "prix": 54.9
+          }
+        ]
+      }
+    ]
+  }
+]
