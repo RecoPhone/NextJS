@@ -21,22 +21,24 @@ const REQUIRED_AT_RUNTIME = [
   'NEXT_PUBLIC_SITE_URL',
   'FONEDAY_API_URL',
   'FONEDAY_API_TOKEN',
-  'DOWNLOAD_ENDPOINT=https://download.recophone.be/upload.php',
-  'DOWNLOAD_BEARER=d7b45aae80973810af642a709224c9d89b8c2a7506afd6da3df9db3cf50afccc',
-  'SMTP_HOST=mail.recophone.be',
-  'SMTP_PORT=465',
-  'SMTP_SECURE=true',
-  'SMTP_USER=hello@recophone.be',
-  'SMTP_PASS=mpT0zr1312//!',
-  'MAIL_FROM="RecoPhone <hello@recophone.be>"',
+  'DOWNLOAD_ENDPOINT',
+  'DOWNLOAD_BEARER',
+  'SMTP_HOST',
+  'SMTP_PORT',
+  'SMTP_SECURE',
+  'SMTP_USER',
+  'SMTP_PASS',
+  'MAIL_FROM',
   // Décommente si Stripe actif :
-  'STRIPE_SECRET_KEY',
-  'STRIPE_WEBHOOK_SECRET',
+  // 'STRIPE_SECRET_KEY',
+  // 'STRIPE_WEBHOOK_SECRET',
 ];
-for (const k of REQUIRED_AT_RUNTIME) {
-  if (!process.env[k] || String(process.env[k]).trim() === '') {
-    console.error(`[ENV] Variable manquante : ${k}`);
-  }
+const missingRuntime = REQUIRED_AT_RUNTIME.filter(
+  (k) => !process.env[k] || String(process.env[k]).trim() === ''
+);
+if (missingRuntime.length) {
+  console.error('[ENV] Variables manquantes :', missingRuntime.join(', '));
+  process.exit(1);
 }
 
 const port = process.env.PORT || 3000;
