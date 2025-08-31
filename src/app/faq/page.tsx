@@ -329,9 +329,9 @@ const FAQSectionPro: React.FC = () => {
           <p className="text-xs md:text-sm tracking-widest font-semibold text-[#54b435]">
             FAQ • QUESTIONS FRÉQUENTES
           </p>
-          <h2 id="faq-title" className="mt-2 text-3xl md:text-4xl font-extrabold text-[#222222]">
+          <h1 id="faq-title" className="mt-2 text-3xl md:text-4xl font-extrabold text-[#222222]">
             Vos questions, nos <span className="text-[#54b435]">réponses claires</span>
-          </h2>
+          </h1>
           <p className="mt-3 text-sm md:text-base text-neutral-700">
             Pensée pour le <strong>référencement</strong> et l’<strong>expérience client</strong>.
           </p>
