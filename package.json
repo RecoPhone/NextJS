@@ -6,17 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "next build"
   },
   "dependencies": {
-    "@google-analytics/data": "5.2.0",
-    "@prisma/client": "^6.14.0",
     "@stripe/stripe-js": "^7.8.0",
     "argon2": "^0.41.1",
     "basic-ftp": "^5.0.5",
     "bcryptjs": "^3.0.2",
     "framer-motion": "^12.23.12",
-    "iron-session": "^8.0.4",
     "jose": "^6.1.0",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.539.0",
@@ -33,7 +31,8 @@
     "resend": "^6.0.1",
     "stripe": "^18.4.0",
     "zod": "^4.1.5",
-    "zustand": "^5.0.7"
+    "zustand": "^5.0.7",
+    "express": "4.19.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
