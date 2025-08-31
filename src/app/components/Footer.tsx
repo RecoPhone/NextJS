@@ -23,7 +23,6 @@ export default function Footer() {
               <li><Link className="hover:underline hover:decoration-[#54b435]" href="/abonnements">Abonnements</Link></li>
               <li><Link className="hover:underline hover:decoration-[#54b435]" href="/re-smartphones">[RE]Smartphones</Link></li>
               <li><Link className="hover:underline hover:decoration-[#54b435]" href="/histoire">Histoire</Link></li>
-              <li><Link className="hover:underline hover:decoration-[#54b435]" href="/blog">Blog</Link></li>
               <li><Link className="hover:underline hover:decoration-[#54b435]" href="/devis">Devis gratuit</Link></li>
             </ul>
           </nav>
@@ -44,17 +43,17 @@ export default function Footer() {
           <p>© {year} RecoPhone — Tous droits réservés.</p>
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 sm:justify-end">
             <li>
-              <Link className="hover:underline hover:decoration-[#54b435]" href="/cgv">
+              <Link className="hover:underline hover:decoration-[#54b435]" href="/legal/cgv">
                 CGV
               </Link>
             </li>
             <li>
-              <Link className="hover:underline hover:decoration-[#54b435]" href="/confidentialite">
+              <Link className="hover:underline hover:decoration-[#54b435]" href="/legal/confidentialite">
                 Politique de confidentialité
               </Link>
             </li>
             <li>
-              <span className="text-white/50">Fait avec 💚 en Belgique</span>
+              <span className="text-white/50">Fait avec 💚 en Belgique par DevMySite</span>
             </li>
           </ul>
         </div>

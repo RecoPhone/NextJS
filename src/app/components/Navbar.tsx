@@ -10,7 +10,6 @@ const navItems = [
   { label: "Abonnements", href: "/abonnements" },
   { label: "[RE]Smartphones", href: "/re-smartphones" },
   { label: "Histoire", href: "/histoire" },
-  { label: "Blog", href: "/blog" },
 ];
 
 function isActive(href: string, pathname: string) {
@@ -19,7 +18,7 @@ function isActive(href: string, pathname: string) {
 }
 
 // CartButton chargé en dynamique pour éviter les mismatchs SSR/hydratation
-const CartButton = dynamic(() => import("@/components/cart/CartButton"), { ssr: false });
+const CartButton = dynamic(() => import("../../components/cart/CartButton"), { ssr: false });
 
 export default function Navbar() {
   const pathname = usePathname() || "/";

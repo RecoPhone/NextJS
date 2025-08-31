@@ -5,7 +5,7 @@ import fs from "fs/promises";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-/* ───────────────────────── Types (alignés avec StepResume) ───────────────────────── */
+/* ───────────────────────── Types ───────────────────────── */
 type QuoteItemMeta = { color?: string | null; partKind?: "back" | "frame" };
 type QuoteItem = { label: string; price: number; qty?: number; meta?: QuoteItemMeta };
 type QuoteDevice = { category?: string; model?: string; items: QuoteItem[] };
@@ -14,37 +14,33 @@ type ClientInfo = { firstName: string; lastName: string; email: string; phone: s
 
 type QuotePayload = {
   quoteNumber: string;
-  dateISO: string;
+  createdAt?: string; // ISO
   company: CompanyInfo;
   client: ClientInfo;
-  devices: QuoteDevice[];
+  device: QuoteDevice;
+  subtotal?: number;
+  vat?: number;
+  total?: number;
   travelFee?: number;
-  payInTwo?: boolean;
-  signatureDataUrl?: string | null;
+  discount?: number;
+  note?: string;
 };
 
-type ContractPayload = {
-  contractNumber: string;
-  dateISO: string;
-  quoteRef: string;
-  company: CompanyInfo;
-  client: ClientInfo;
-  amountTotal: number;
-  schedule: { label: string; due: string; amountPct: number }[];
-  legal: string[];
-  signatureDataUrl?: string | null;
+/* ───────────────────────── Utils ───────────────────────── */
+const isNum = (v: unknown): v is number => typeof v === "number" && Number.isFinite(v);
+const n = (v: unknown, fallback = 0) => {
+  if (isNum(v)) return v;
+  const num = typeof v === "string" ? Number(v) : NaN;
+  return Number.isFinite(num) ? num : fallback;
 };
+const str = (v: unknown, fallback = "") => (typeof v === "string" ? v : fallback);
 
-/* ───────────────────────── Helpers visuels pour le “template pro” ───────────────────────── */
-const A4: [number, number] = [595.28, 841.89];
-const margin = 36;
-const brand = { r: 0x54/255, g: 0xb4/255, b: 0x35/255 }; // #54b435
-
-function euro(n: number) {
-  return new Intl.NumberFormat("fr-BE", { style: "currency", currency: "EUR" }).format(n);
+function eur(x: unknown) {
+  const v = n(x, 0);
+  return new Intl.NumberFormat("fr-BE", { style: "currency", currency: "EUR" }).format(v);
 }
 
-async function loadPublicPng(path = "/logo_recophone.png"): Promise<Uint8Array | null> {
+async function loadPublicImage(path: string): Promise<Uint8Array | null> {
   try {
     const p = `${process.cwd()}/public${path}`;
     const buf = await fs.readFile(p);
@@ -54,243 +50,216 @@ async function loadPublicPng(path = "/logo_recophone.png"): Promise<Uint8Array |
   }
 }
 
-async function drawBrandBar(page: any) {
-  page.drawRectangle({ x: 0, y: page.getHeight() - 8, width: page.getWidth(), height: 8, color: rgb(brand.r,brand.g,brand.b) });
+/* ───────────────────────── Drawing helpers (safe) ───────────────────────── */
+function hLine(page: any, x1: unknown, x2: unknown, y: unknown, thickness = 1, color?: any) {
+  const sx = n(x1), ex = n(x2), sy = n(y);
+  if (!isNum(sx) || !isNum(ex) || !isNum(sy)) return;
+  page.drawLine({ start: { x: sx, y: sy }, end: { x: ex, y: sy }, thickness, color });
+}
+function vLine(page: any, x: unknown, y1: unknown, y2: unknown, thickness = 1, color?: any) {
+  const sx = n(x), sy = n(y1), ey = n(y2);
+  if (!isNum(sx) || !isNum(sy) || !isNum(ey)) return;
+  page.drawLine({ start: { x: sx, y: sy }, end: { x: sx, y: ey }, thickness, color });
 }
 
-async function drawHeaderPro(pdf: PDFDocument, page: any, company: CompanyInfo, title: string) {
-  await drawBrandBar(page);
-  const yTop = page.getHeight() - margin - 6;
+/* ───────────────────────── Layout constants ───────────────────────── */
+const A4 = { width: 595.28, height: 841.89 };
+const margin = 40;
+const brand = { bg: rgb(0.329, 0.706, 0.208) }; // #54b435
+const ink = {
+  primary: rgb(0.133, 0.133, 0.133),
+  gray: rgb(0.55, 0.55, 0.55),
+  light: rgb(0.88, 0.88, 0.88),
+};
 
-  const logoBytes = await loadPublicPng();
-  if (logoBytes) {
-    const png = await pdf.embedPng(logoBytes);
-    const w = 110, h = (png.height / png.width) * w;
-    page.drawImage(png, { x: margin, y: yTop - h, width: w, height: h });
-  }
+/* ───────────────────────── Sections ───────────────────────── */
+async function drawBrandBar(page: any) {
+  const yTop = A4.height - margin;
+  page.drawRectangle({ x: 0, y: yTop, width: A4.width, height: 12, color: brand.bg });
+}
 
-  const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
-  const reg = await pdf.embedFont(StandardFonts.Helvetica);
+async function drawHeader(pdf: PDFDocument, page: any, fontBold: any, font: any, payload: QuotePayload) {
+  const yTop = A4.height - margin - 20;
+  const xLeft = margin;
+  const xRight = A4.width - margin;
 
-  const t = title.toUpperCase();
-  const ts = 18;
-  const tw = bold.widthOfTextAtSize(t, ts);
-  page.drawText(t, { x: page.getWidth() - margin - tw, y: yTop, size: ts, font: bold, color: rgb(0.1,0.1,0.1) });
+  // Logo (PNG/JPG)
+  let y = yTop;
+  const png = await loadPublicImage("/logo_recophone.png");
+  const jpg = !png ? await loadPublicImage("/logo_recophone.jpg") : null;
+  try {
+    if (png) {
+      const img = await pdf.embedPng(png);
+      const w = 90, h = (img.height / img.width) * w;
+      page.drawImage(img, { x: xLeft, y: y + 2, width: w, height: h });
+    } else if (jpg) {
+      const img = await pdf.embedJpg(jpg);
+      const w = 90, h = (img.height / img.width) * w;
+      page.drawImage(img, { x: xLeft, y: y + 2, width: w, height: h });
+    }
+  } catch { /* ignore */ }
 
-  let y = yTop - 22;
-  const meta = [
-    company.address || "",
-    company.website ? `Site: ${company.website}` : "",
-    company.vat ? `TVA: ${company.vat}` : "",
-    `Tél: ${company.phone}`,
-    `Email: ${company.email}`,
-  ].filter(Boolean);
-  meta.forEach((line) => {
-    page.drawText(line, { x: margin + 130, y, size: 9, font: reg, color: rgb(0.35,0.35,0.35) });
-    y -= 12;
-  });
+  // Company / title
+  page.drawText(str(payload.company?.name, "RecoPhone"), { x: xLeft + 100, y, size: 16, font: fontBold, color: ink.primary });
+  y -= 18;
+  const slogan = str(payload.company?.slogan, "Réparer — Reconditionner — Protéger");
+  page.drawText(slogan, { x: xLeft + 100, y, size: 10, font, color: ink.gray });
 
-  page.drawLine({ start: { x: margin, y: y - 8 }, end: { x: page.getWidth() - margin }, thickness: 1, color: rgb(0.9,0.9,0.9) });
+  // Quote meta
+  const qn = str(payload.quoteNumber, "DEVIS-0000");
+  const dateStr = str(payload.createdAt, new Date().toISOString().slice(0, 10));
+  const right = [
+    `Devis n° ${qn}`,
+    `Date : ${new Date(dateStr).toLocaleDateString("fr-BE")}`,
+  ];
+  const rX = xRight - 180;
+  let ry = yTop;
+  right.forEach((t) => { page.drawText(t, { x: rX, y: ry, size: 11, font, color: ink.primary }); ry -= 14; });
+
+  // separator
+  hLine(page, margin, A4.width - margin, y - 8, 1, ink.light);
   return y - 16;
 }
 
-async function drawFooterPro(pdf: PDFDocument, page: any, company: CompanyInfo, msg: string) {
-  const reg = await pdf.embedFont(StandardFonts.Helvetica);
-  const y = 24;
-  page.drawLine({ start: { x: margin, y: y + 14 }, end: { x: page.getWidth() - margin, y: y + 14 }, thickness: 1, color: rgb(0.9,0.9,0.9) });
-  page.drawText(msg, { x: margin, y, size: 9, font: reg, color: rgb(0.4,0.4,0.4) });
-  const coords = [company.phone, company.email, company.website].filter(Boolean).join(" • ");
-  const w = reg.widthOfTextAtSize(coords, 9);
-  page.drawText(coords, { x: page.getWidth() - margin - w, y, size: 9, font: reg, color: rgb(0.4,0.4,0.4) });
+function drawClientDevice(page: any, fontBold: any, font: any, payload: QuotePayload, yStart: number) {
+  let y = yStart;
+
+  page.drawText("Client", { x: margin, y, size: 12, font: fontBold, color: ink.primary });
+  page.drawText("Appareil", { x: A4.width / 2, y, size: 12, font: fontBold, color: ink.primary });
+  y -= 14;
+
+  const clientLines = [
+    `${str(payload.client?.firstName)} ${str(payload.client?.lastName)}`.trim(),
+    str(payload.client?.email),
+    str(payload.client?.phone),
+    str(payload.client?.address),
+  ].filter(Boolean);
+
+  const dev = payload.device || { items: [] };
+  const deviceLines = [str(dev.category), str(dev.model)].filter(Boolean);
+
+  clientLines.forEach((t) => { page.drawText(t, { x: margin, y, size: 10, font, color: ink.primary }); y -= 12; });
+  let yDev = yStart - 14;
+  deviceLines.forEach((t) => { page.drawText(t, { x: A4.width / 2, y: yDev, size: 10, font, color: ink.primary }); yDev -= 12; });
+
+  const yNext = Math.min(y, yDev) - 12;
+  hLine(page, margin, A4.width - margin, yNext, 1, ink.light);
+  return yNext - 10;
 }
 
-function wrapText(font: any, text: string, size: number, maxWidth: number) {
-  const words = text.split(/\s+/);
-  const lines: string[] = [];
-  let line = "";
-  for (const w of words) {
-    const tryL = line ? `${line} ${w}` : w;
-    if (font.widthOfTextAtSize(tryL, size) > maxWidth) {
-      if (line) lines.push(line);
-      line = w;
-    } else line = tryL;
-  }
-  if (line) lines.push(line);
-  return lines;
-}
+function drawItemsTable(page: any, fontBold: any, font: any, payload: QuotePayload, yStart: number) {
+  let y = yStart;
+  const items = Array.isArray(payload.device?.items) ? payload.device.items : [];
+  const cols = { label: margin, qty: A4.width - margin - 160, price: A4.width - margin - 80, total: A4.width - margin };
 
-/* ───────────────────────── Builders: devis & contrat ───────────────────────── */
-async function buildQuotePdfBuffer(data: QuotePayload): Promise<Uint8Array> {
-  const pdf = await PDFDocument.create();
-  let page = pdf.addPage(A4);
-  const reg = await pdf.embedFont(StandardFonts.Helvetica);
-  const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
-
-  let y = await drawHeaderPro(pdf, page, data.company, "Devis");
-  page.drawText(`Devis n° ${data.quoteNumber} — ${new Date(data.dateISO).toLocaleString("fr-BE")}`, { x: margin, y, size: 9, font: reg, color: rgb(0.3,0.3,0.3) });
-  y -= 20;
-
-  page.drawText("Client", { x: margin, y, size: 11, font: bold, color: rgb(0.1,0.1,0.1) }); y -= 14;
-  for (const line of [`${data.client.firstName} ${data.client.lastName}`, data.client.email, data.client.phone, data.client.address || ""].filter(Boolean)) {
-    page.drawText(line, { x: margin, y, size: 10, font: reg, color: rgb(0.2,0.2,0.2) }); y -= 12;
-  }
-  y -= 6;
-
-  // Table header
-  const colX = [margin, margin + 210, margin + 410, margin + 480];
-  const headerY = y;
-  page.drawRectangle({ x: margin - 2, y: headerY - 16, width: 523, height: 18, color: rgb(0.96, 0.99, 0.96) });
-  [["Appareil",colX[0]],["Réparation",colX[1]],["Détails",colX[2]],["Prix",colX[3]]].forEach(([t,x]) =>
-    page.drawText(String(t), { x: Number(x), y: headerY - 12, size: 9, font: bold, color: rgb(0.1,0.1,0.1) })
-  );
-  y = headerY - 24;
-
-  const drawRow = (m: string, label: string, det: string, price: number, zebra: boolean) => {
-    if (zebra) page.drawRectangle({ x: margin - 2, y: y - 2, width: 523, height: 14, color: rgb(0.985, 0.99, 0.985) });
-    page.drawText(m, { x: colX[0], y, size: 9, font: reg, color: rgb(0.15,0.15,0.15) });
-    page.drawText(label, { x: colX[1], y, size: 9, font: reg, color: rgb(0.15,0.15,0.15) });
-    if (det) page.drawText(det, { x: colX[2], y, size: 9, font: reg, color: rgb(0.35,0.35,0.35) });
-    const s = euro(price); const w = bold.widthOfTextAtSize(s, 9);
-    page.drawText(s, { x: colX[3] + 42 - w, y, size: 9, font: bold, color: rgb(0.1,0.1,0.1) });
-  };
-
-  let total = 0, rowIndex = 0;
-
-  const addPageIfNeeded = async (min = 80) => {
-    if (y < min) {
-      page = pdf.addPage(A4);
-      y = await drawHeaderPro(pdf, page, data.company, "Devis");
-      // redraw table header
-      const hY = y;
-      page.drawRectangle({ x: margin - 2, y: hY - 16, width: 523, height: 18, color: rgb(0.96, 0.99, 0.96) });
-      [["Appareil",colX[0]],["Réparation",colX[1]],["Détails",colX[2]],["Prix",colX[3]]].forEach(([t,x]) =>
-        page.drawText(String(t), { x: Number(x), y: hY - 12, size: 9, font: bold, color: rgb(0.1,0.1,0.1) })
-      );
-      y = hY - 24;
-    }
-  };
-
-  for (const d of data.devices) {
-    const model = d.model || "";
-    for (const it of d.items) {
-      await addPageIfNeeded(80);
-      const det = it.meta && "color" in it.meta ? `${it.meta.partKind === "back" ? "Face arrière" : "Châssis"} : ${it.meta.color ?? "Je ne sais pas"}` : "";
-      const price = it.price * (it.qty ?? 1);
-      drawRow(model, it.label, det, price, rowIndex % 2 === 1);
-      total += price; rowIndex++; y -= 14;
-    }
-  }
-  if (data.travelFee && data.travelFee > 0) {
-    await addPageIfNeeded(80);
-    drawRow("—", "Frais de déplacement", "", data.travelFee, rowIndex % 2 === 1);
-    total += data.travelFee; rowIndex++; y -= 14;
-  }
-
-  // Totaux encadrés
+  // Header
+  page.drawText("Désignation", { x: cols.label, y, size: 11, font: fontBold });
+  page.drawText("Qté", { x: cols.qty, y, size: 11, font: fontBold });
+  page.drawText("Prix", { x: cols.price, y, size: 11, font: fontBold });
+  page.drawText("Total", { x: cols.total - 40, y, size: 11, font: fontBold });
+  y -= 10;
+  hLine(page, margin, A4.width - margin, y, 1, ink.light);
   y -= 8;
-  page.drawRectangle({ x: colX[2] - 10, y: y - 10, width: 170, height: 28, color: rgb(1,1,1), borderColor: rgb(0.9,0.9,0.9), borderWidth: 1 });
-  page.drawText("Total estimé", { x: colX[2] - 6, y: y + 6, size: 10, font: reg, color: rgb(0.2,0.2,0.2) });
-  const totalStr = euro(total); const tw = bold.widthOfTextAtSize(totalStr, 12);
-  page.drawText(totalStr, { x: colX[3] + 42 - tw, y: y + 4, size: 12, font: bold, color: rgb(0.1,0.1,0.1) });
 
-  await drawFooterPro(pdf, page, data.company, "Devis valable 14 jours • CGV disponibles sur recophone.be/cgv");
-  return await pdf.save();
+  if (items.length === 0) {
+    page.drawText("Aucune ligne", { x: cols.label, y, size: 10, font, color: ink.gray });
+    y -= 12;
+  } else {
+    for (const it of items) {
+      const qty = n(it.qty, 1);
+      const lineTotal = n(it.price, 0) * qty;
+      const line = it.label
+        + (it.meta?.color ? ` — ${it.meta.color}` : "")
+        + (it.meta?.partKind ? ` (${it.meta.partKind})` : "");
+      page.drawText(line, { x: cols.label, y, size: 10, font });
+      page.drawText(String(qty), { x: cols.qty, y, size: 10, font });
+      page.drawText(eur(it.price), { x: cols.price, y, size: 10, font });
+      page.drawText(eur(lineTotal), { x: cols.total - 40, y, size: 10, font });
+      y -= 14;
+    }
+  }
+
+  hLine(page, margin, A4.width - margin, y, 1, ink.light);
+  return y - 10;
 }
 
-async function buildContractPdfBuffer(data: ContractPayload): Promise<Uint8Array> {
-  const pdf = await PDFDocument.create();
-  let page = pdf.addPage(A4);
-  const reg = await pdf.embedFont(StandardFonts.Helvetica);
-  const bold = await pdf.embedFont(StandardFonts.HelveticaBold);
+function drawTotals(page: any, fontBold: any, font: any, payload: QuotePayload, yStart: number) {
+  let y = yStart;
+  const x = A4.width - margin - 200;
 
-  let y = await drawHeaderPro(pdf, page, data.company, "Contrat de paiement en deux fois");
-  page.drawText(`Contrat n° ${data.contractNumber} — ${new Date(data.dateISO).toLocaleString("fr-BE")} | Réf. devis ${data.quoteRef}`, { x: margin, y, size: 9, font: reg, color: rgb(0.3,0.3,0.3) });
-  y -= 20;
+  const subtotal = n(payload.subtotal);
+  const travel = n(payload.travelFee);
+  const discount = n(payload.discount);
+  const vat = n(payload.vat);
+  const total = n(payload.total, subtotal + travel - discount + vat);
 
-  page.drawText("Client", { x: margin, y, size: 11, font: bold, color: rgb(0.1,0.1,0.1) }); y -= 14;
-  for (const line of [`${data.client.firstName} ${data.client.lastName}`, data.client.email, data.client.phone, data.client.address || ""].filter(Boolean)) {
-    page.drawText(line, { x: margin, y, size: 10, font: reg, color: rgb(0.2,0.2,0.2) }); y -= 12;
-  }
-  y -= 6;
+  const rows = [
+    ["Sous-total", eur(subtotal)],
+    ...(travel ? ([["Déplacement", eur(travel)]] as const) : []),
+    ...(discount ? ([["Remise", `- ${eur(discount)}`]] as const) : []),
+    ["TVA", eur(vat)],
+    ["Total", eur(total)],
+  ] as const;
 
-  // Échéancier
-  page.drawText("Échéancier", { x: margin, y, size: 11, font: bold, color: rgb(0.1,0.1,0.1) }); y -= 16;
-  const colX = [margin, margin + 220, margin + 430];
-  const rows = [["Échéance","Exigibilité","Montant"], ...data.schedule.map(s => [s.label, s.due, euro((s.amountPct/100)*data.amountTotal)])];
-  rows.forEach((r, i) => {
-    const isHead = i === 0; const f = isHead ? StandardFonts.HelveticaBold : StandardFonts.Helvetica;
-    const font = isHead ? bold : reg;
-    const c = isHead ? rgb(0.1,0.1,0.1) : rgb(0.2,0.2,0.2);
-    if (isHead) page.drawRectangle({ x: margin - 2, y: y - 16, width: 523, height: 18, color: rgb(0.96, 0.99, 0.96) });
-    page.drawText(String(r[0]), { x: colX[0], y: y - 12, size: 9, font, color: c });
-    page.drawText(String(r[1]), { x: colX[1], y: y - 12, size: 9, font, color: c });
-    const s = String(r[2]); const w = font.widthOfTextAtSize(s, 9);
-    page.drawText(s, { x: colX[2] + 42 - w, y: y - 12, size: 9, font, color: c }); y -= 18;
+  rows.forEach(([k, v], i) => {
+    const isLast = i === rows.length - 1;
+    page.drawText(k, { x, y, size: 11, font });
+    page.drawText(v, { x: x + 120, y, size: 11, font: isLast ? fontBold : font });
+    y -= 14;
+    if (!isLast) hLine(page, x, x + 200, y + 4, 1, ink.light);
   });
 
-  const tot = euro(data.amountTotal), tw = bold.widthOfTextAtSize(tot, 12);
-  page.drawText("Total", { x: colX[1], y: y - 2, size: 10, font: reg, color: rgb(0.2,0.2,0.2) });
-  page.drawText(tot, { x: colX[2] + 42 - tw, y: y - 4, size: 12, font: bold, color: rgb(0.1,0.1,0.1) });
-  y -= 24;
-
-  // Conditions légales (wrapping)
-  page.drawText("Conditions légales", { x: margin, y, size: 11, font: bold, color: rgb(0.1,0.1,0.1) }); y -= 14;
-  const linesWrap = (t: string, max = 523) => wrapText(reg, t, 9, max);
-  for (const li of data.legal) {
-    const lines = linesWrap(`• ${li}`);
-    for (const line of lines) {
-      if (y < 80) {
-        page = pdf.addPage(A4);
-        y = await drawHeaderPro(pdf, page, data.company, "Contrat de paiement en deux fois") - 6;
-      }
-      page.drawText(line, { x: margin, y, size: 9, font: reg, color: rgb(0.25,0.25,0.25) });
-      y -= 12;
-    }
-  }
-  y -= 10;
-
-  // Signature
-  page.drawText("Signature du client", { x: margin, y, size: 11, font: bold, color: rgb(0.1,0.1,0.1) }); y -= 12;
-  // (Si tu veux intégrer la signature image depuis data URL dans /api/pdf, ajoute parseDataUrlImage ici)
-  page.drawLine({ start: { x: margin, y: y - 8 }, end: { x: margin + 220, y: y - 8 }, thickness: 1, color: rgb(0,0,0) });
-
-  await drawFooterPro(pdf, page, data.company, "Document contractuel — Conservez une copie");
-  return await pdf.save();
+  return y - 6;
 }
 
-/* ───────────────────────── Handler POST ─────────────────────────
-  Body attendu :
-  {
-    "docType": "quote" | "contract",
-    "payload": <QuotePayload | ContractPayload>,
-    "download": true   // pour forcer attachment
-  }
------------------------------------------------------------------- */
+function drawFooter(page: any, font: any, payload: QuotePayload) {
+  const y = margin - 10;
+  hLine(page, margin, A4.width - margin, y + 14, 1, ink.light);
+  const contact = [str(payload.company?.email), str(payload.company?.phone), str(payload.company?.website)]
+    .filter(Boolean)
+    .join(" • ");
+  page.drawText(contact, { x: margin, y, size: 9, font, color: ink.gray });
+}
+
+/* ───────────────────────── Handler ───────────────────────── */
 export async function POST(req: NextRequest) {
-  const { docType, payload, download } = (await req.json()) as {
-    docType: "quote" | "contract";
-    payload: QuotePayload | ContractPayload;
-    download?: boolean;
-  };
-
-  if (!docType || !payload) {
-    return new Response(JSON.stringify({ error: "Bad request" }), { status: 400 });
-  }
-
   try {
-    let bytes: Uint8Array;
-    let filename: string;
+    const { searchParams } = new URL(req.url);
+    const download = searchParams.get("download") === "1";
 
-    if (docType === "quote") {
-      bytes = await buildQuotePdfBuffer(payload as QuotePayload);
-      filename = `devis_${(payload as QuotePayload).quoteNumber}.pdf`;
-    } else {
-      bytes = await buildContractPdfBuffer(payload as ContractPayload);
-      filename = `contrat_${(payload as ContractPayload).contractNumber}.pdf`;
-    }
+    const body = (await req.json()) as Partial<QuotePayload> | undefined;
+    if (!body) return new Response(JSON.stringify({ error: "payload vide" }), { status: 400 });
 
-    // Toujours renvoyer le PDF en téléchargement
+    const payload: QuotePayload = {
+      quoteNumber: str(body.quoteNumber, "DEVIS-0000"),
+      createdAt: str(body.createdAt, new Date().toISOString()),
+      company: body.company as CompanyInfo,
+      client: body.client as ClientInfo,
+      device: (body.device as QuoteDevice) ?? { items: [] },
+      subtotal: n(body.subtotal, 0),
+      vat: n(body.vat, 0),
+      total: n(body.total, 0),
+      travelFee: n(body.travelFee, 0),
+      discount: n(body.discount, 0),
+      note: str(body.note),
+    };
+
+    const pdf = await PDFDocument.create();
+    const page = pdf.addPage([A4.width, A4.height]);
+    const font = await pdf.embedFont(StandardFonts.Helvetica);
+    const fontBold = await pdf.embedFont(StandardFonts.HelveticaBold);
+
+    await drawBrandBar(page);
+    const yAfterHeader = await drawHeader(pdf, page, fontBold, font, payload);
+    const yAfterClient = drawClientDevice(page, fontBold, font, payload, yAfterHeader);
+    const yAfterItems = drawItemsTable(page, fontBold, font, payload, yAfterClient);
+    drawTotals(page, fontBold, font, payload, yAfterItems);
+    drawFooter(page, font, payload);
+
+    const bytes = await pdf.save();
+    const filename = `devis_${payload.quoteNumber.replace(/[^A-Za-z0-9_-]+/g, "-")}.pdf`;
     const buf = Buffer.from(bytes);
+
     return new Response(buf, {
       status: 200,
       headers: {
